@@ -1,0 +1,175 @@
+{
+  "result_directory": "MRDS_FINAL_DELIVERY_2026-07-13\\results\\grouped_chatter_all40",
+  "task_aware": false,
+  "n_splits": 20,
+  "n_fold_rows": 3200,
+  "n_selected_rows": 2160,
+  "n_score_rows": 560,
+  "duplicate_rank": false,
+  "duplicate_recording": false,
+  "duplicate_condition_in_task_aware": null,
+  "splits": [
+    {
+      "split": 0,
+      "n_train": 120,
+      "n_test": 40,
+      "n_train_conditions": 30,
+      "n_test_conditions": 10,
+      "condition_overlap": 0
+    },
+    {
+      "split": 1,
+      "n_train": 120,
+      "n_test": 40,
+      "n_train_conditions": 30,
+      "n_test_conditions": 10,
+      "condition_overlap": 0
+    },
+    {
+      "split": 2,
+      "n_train": 120,
+      "n_test": 40,
+      "n_train_conditions": 30,
+      "n_test_conditions": 10,
+      "condition_overlap": 0
+    },
+    {
+      "split": 3,
+      "n_train": 120,
+      "n_test": 40,
+      "n_train_conditions": 30,
+      "n_test_conditions": 10,
+      "condition_overlap": 0
+    },
+    {
+      "split": 4,
+      "n_train": 120,
+      "n_test": 40,
+      "n_train_conditions": 30,
+      "n_test_conditions": 10,
+      "condition_overlap": 0
+    },
+    {
+      "split": 5,
+      "n_train": 120,
+      "n_test": 40,
+      "n_train_conditions": 30,
+      "n_test_conditions": 10,
+      "condition_overlap": 0
+    },
+    {
+      "split": 6,
+      "n_train": 120,
+      "n_test": 40,
+      "n_train_conditions": 30,
+      "n_test_conditions": 10,
+      "condition_overlap": 0
+    },
+    {
+      "split": 7,
+      "n_train": 120,
+      "n_test": 40,
+      "n_train_conditions": 30,
+      "n_test_conditions": 10,
+      "condition_overlap": 0
+    },
+    {
+      "split": 8,
+      "n_train": 120,
+      "n_test": 40,
+      "n_train_conditions": 30,
+      "n_test_conditions": 10,
+      "condition_overlap": 0
+    },
+    {
+      "split": 9,
+      "n_train": 120,
+      "n_test": 40,
+      "n_train_conditions": 30,
+      "n_test_conditions": 10,
+      "condition_overlap": 0
+    },
+    {
+      "split": 10,
+      "n_train": 120,
+      "n_test": 40,
+      "n_train_conditions": 30,
+      "n_test_conditions": 10,
+      "condition_overlap": 0
+    },
+    {
+      "split": 11,
+      "n_train": 120,
+      "n_test": 40,
+      "n_train_conditions": 30,
+      "n_test_conditions": 10,
+      "condition_overlap": 0
+    },
+    {
+      "split": 12,
+      "n_train": 120,
+      "n_test": 40,
+      "n_train_conditions": 30,
+      "n_test_conditions": 10,
+      "condition_overlap": 0
+    },
+    {
+      "split": 13,
+      "n_train": 120,
+      "n_test": 40,
+      "n_train_conditions": 30,
+      "n_test_conditions": 10,
+      "condition_overlap": 0
+    },
+    {
+      "split": 14,
+      "n_train": 120,
+      "n_test": 40,
+      "n_train_conditions": 30,
+      "n_test_conditions": 10,
+      "condition_overlap": 0
+    },
+    {
+      "split": 15,
+      "n_train": 120,
+      "n_test": 40,
+      "n_train_conditions": 30,
+      "n_test_conditions": 10,
+      "condition_overlap": 0
+    },
+    {
+      "split": 16,
+      "n_train": 120,
+      "n_test": 40,
+      "n_train_conditions": 30,
+      "n_test_conditions": 10,
+      "condition_overlap": 0
+    },
+    {
+      "split": 17,
+      "n_train": 120,
+      "n_test": 40,
+      "n_train_conditions": 30,
+      "n_test_conditions": 10,
+      "condition_overlap": 0
+    },
+    {
+      "split": 18,
+      "n_train": 120,
+      "n_test": 40,
+      "n_train_conditions": 30,
+      "n_test_conditions": 10,
+      "condition_overlap": 0
+    },
+    {
+      "split": 19,
+      "n_train": 120,
+      "n_test": 40,
+      "n_train_conditions": 30,
+      "n_test_conditions": 10,
+      "condition_overlap": 0
+    }
+  ],
+  "errors": [],
+  "valid": true
+}

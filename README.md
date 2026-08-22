@@ -1,202 +1,330 @@
 # MRDS: Meta-Rényi Distributional Sampling for Recording-Level Chatter Monitoring
 
-[![Status](https://img.shields.io/badge/status-research%20code-blue)](#)
-[![Data](https://img.shields.io/badge/data-available%20in%20repository-green)](#data)
-[![Code](https://img.shields.io/badge/code-reproducibility%20materials-green)](#code)
+> **Public data, source code, saved results, and reproducibility materials associated with the MRDS study.**
 
-## Overview
+This repository accompanies the research on **Meta-Rényi Distributional Sampling (MRDS)** for reducing the number of complete machining recordings required for chatter-monitoring model development while preserving the distributional diversity of the training set.
 
-This repository provides the data, source code, metadata, figures, and reproducibility materials associated with **Meta-Rényi Distributional Sampling (MRDS)**, a recording-level data-reduction framework developed for machine-tool chatter monitoring.
+The repository is intentionally **journal-independent** and contains only material needed for scientific review, reproducibility, and reuse.
 
-MRDS represents each complete experimental recording through the empirical distribution of descriptors extracted from its local windows. The collection of recording distributions is then treated at a second, meta-distribution level. A finite Rényi-based objective, together with Wasserstein geometry, is used to select a compact, duplicate-free subset of **complete observed recordings** intended to preserve the diversity of the original training data.
+---
 
-The repository is maintained independently of any specific journal. It is intended to support transparent review, reproducibility, reuse, and citation of the research materials.
+## Experimental setup
 
-## Repository contents
+<p align="center">
+  <img src="assets/experimental_setup.png" alt="Experimental setup for end milling and acoustic signal acquisition" width="900">
+</p>
+
+<p align="center"><em>Experimental setup for end milling and acoustic signal acquisition.</em></p>
+
+Only the experimental-equipment/setup image is displayed in this README. Other manuscript/result figures, when retained for reproducibility, are stored under `results/` and are not displayed here.
+
+---
+
+## Study at a glance
+
+- **160 complete experimental recordings**
+- **40 machining conditions**
+- **4 repetitions per condition**
+- **40 window-level descriptors**
+- complete recordings represented as empirical distributions of local descriptors
+- **8 weighted support atoms** per recording distribution
+- finite Rényi objective with **α = 2**
+- recording-retention study from **10% to 50%**
+- **20 condition-disjoint outer folds** from five seeds × four folds
+- each outer split contains **120 training recordings / 40 test recordings**
+- machining-condition overlap between training and test is **zero**
+- downstream classifier: **unweighted Gaussian Naive Bayes**
+- Rényi mixture weights are used for subset construction/refinement and are **not passed as classifier sample weights**
+
+---
+
+## Repository structure
 
 ```text
-.
+MRDS-Chatter-Monitoring/
 ├── README.md
 ├── CITATION.cff
-├── DATA_CODE_AVAILABILITY.md
-├── RELEASE_CHECKLIST.md
-├── LICENSES.md
-│
-├── code/
-│   ├── preprocessing/        # Signal preparation and windowing
-│   ├── feature_extraction/   # Extraction of recording/window descriptors
-│   ├── mrds/                 # MRDS and refined MRDS implementation
-│   ├── baselines/            # Comparison/reduction methods
-│   ├── evaluation/           # Classification and evaluation scenarios
-│   └── utils/                # Shared helper functions
-│
-├── data/
-│   ├── raw/                  # Original shareable recordings
-│   ├── processed/            # Processed data used by the experiments
-│   ├── metadata/             # Labels, cutting conditions, splits, etc.
-│   └── README.md
-│
-├── results/
-│   ├── tables/               # Machine-readable result tables
-│   └── figures/              # Reproduced result figures
+├── DATA_AND_CODE_AVAILABILITY.md
+├── REPRODUCIBILITY.md
+├── PUBLIC_RELEASE_NOTES.md
+├── SHA256SUMS.txt
+├── requirements.txt
 │
 ├── assets/
-│   ├── experimental_setup.jpg
-│   ├── machining_setup.jpg
-│   ├── sensor_configuration.jpg
-│   └── mrds_workflow.png
+│   ├── experimental_setup.png
+│   └── experimental_setup_source.pdf
 │
-└── docs/
-    └── REPRODUCIBILITY.md
+├── chatterData/
+│   └── *.mat
+│
+├── code/
+│   ├── meta_renyi_reduction.py
+│   ├── mrds_projection_refinement_integrated.py
+│   ├── requirements.txt
+│   └── feature_extraction/
+│       └── extract_features_two_lables_okkk_V3_new_sensor40.m
+│
+├── experiments/
+│   ├── grouped_protocol.py
+│   ├── run_chatter.py
+│   ├── run_chatter_audited.py
+│   ├── run_chatter_grouped.py
+│   ├── validate_grouped_results.py
+│   ├── run_budget_curve_grouped.py
+│   ├── make_grouped_renyi_refinement_figure.py
+│   └── make_grouped_budget_assets.py
+│
+└── results/
+    ├── grouped_chatter_all40/
+    ├── grouped_budget_curve_all40/
+    ├── figures/
+    ├── tables/
+    └── manuscript_assets/
 ```
 
-> **Note:** The image names shown above are recommended names. Replace the placeholders in `assets/` with the final, publication-safe images before release.
+---
 
-## Experimental data
+## Data
 
-The study uses experimental machining recordings collected under multiple cutting conditions and repeated trials. The public data package should contain only material that can legally and ethically be redistributed.
+The direct computational inputs used by the Python evaluation pipeline are the **160 MAT files** in `chatterData/`.
 
-For each recording, the accompanying metadata should identify, where applicable:
+Each MAT archive contains the window-level descriptor representation used by the MRDS experiments. The accompanying manifest and feature-field files are retained under `results/grouped_chatter_all40/` so that filenames, machining-condition grouping, labels, hashes, number of windows, and the 40-feature representation can be audited.
 
-- recording identifier;
-- workpiece/tool configuration;
-- spindle speed;
-- feed rate;
-- axial and radial depth/engagement parameters;
-- repetition number;
-- ground-truth chatter state or class label;
-- sampling information;
-- train/test scenario membership.
+### Important data-scope note
 
-The machine-readable metadata should be placed in `data/metadata/`.
+The current research package contains the MAT archives used by the reported computational experiments. The complete original WAV corpus from which these MAT feature archives were created is **not included** in this public package. Therefore:
 
-### Recommended metadata file
+- the MRDS selection/classification experiments can be rerun from the provided MAT files;
+- the MATLAB feature-extraction source is provided for methodological transparency;
+- complete end-to-end regeneration of all 160 MAT files from raw acoustic WAV signals is not possible from this repository alone.
 
-A single file such as:
+This distinction is stated explicitly to avoid overstating the level of raw-data reproducibility.
+
+---
+
+## Feature representation
+
+The primary archive contains **40 descriptors**:
+
+`Avg_amp`, `CE`, `Centre_Freq`, `Clear_fact`, `CoV`, `CrestFact`, `EnR`, `Freq_Var`, `Imp_Fact`, `Kurt_fact`, `Kurtosis`, `MPE`, `Mean`, `Mean_Square_Freq`, `Mean_of_freq`, `Median`, `Median_Freq`, `OSAF`, `PTP`, `Peak`, `Peak_Freq_Ratio`, `RMS`, `RMS_freq`, `STD`, `STDF`, `Shape_Fact`, `Skew_fact`, `Skewness`, `Spectral_Energy`, `Spectral_Entropy`, `Spectral_Flatness`, `Spectral_Rolloff`, `Spectral_bandwidth`, `Spectral_centroid`, `Square_root_amp`, `TDE`, `Var`, `WPEE`, `ZeroCrossingRate`, and `wRCMDE`.
+
+The evaluation code summarizes each complete recording with five recording-level statistics per descriptor (mean, standard deviation, 25th percentile, median, and 75th percentile), giving a **200-dimensional downstream recording representation**.
+
+---
+
+## MRDS implementation
+
+The principal implementation is in:
 
 ```text
-data/metadata/recording_metadata.csv
+code/meta_renyi_reduction.py
+code/mrds_projection_refinement_integrated.py
 ```
 
-is recommended as the authoritative index linking recording filenames to experimental conditions and labels.
+The implementation includes:
 
-## Data organization
+1. robust training-fitted scaling;
+2. K-means compression of each recording distribution;
+3. pairwise exact Earth Mover's Distance / Wasserstein computation;
+4. finite meta-distribution construction;
+5. Rényi-guided synthetic distribution-valued prototype optimization;
+6. duplicate-free one-to-one projection onto observed recordings;
+7. mixture-weight optimization;
+8. one best-improvement observed-subset swap;
+9. comparison with Wasserstein k-medoids, facility-location, and random-selection baselines.
 
-Place the original shareable recordings in:
+The final observed subset contains distinct **complete experimental recordings**.
+
+---
+
+## Condition-disjoint evaluation
+
+The primary grouped experiment is:
+
+```bash
+python experiments/run_chatter_grouped.py
+```
+
+Default archived configuration:
 
 ```text
-data/raw/
+Seeds:                  11, 23, 37, 53, 71
+Folds per seed:         4
+Total outer folds:      20
+Primary retention:      10%
+Feature set:            all 40 descriptors
+Alpha:                  2.0
+Max support atoms:      8
+Synthetic iterations:   1
+Weight iterations:      10
+Refinement passes:      1
+Primary metric:         Balanced Accuracy
+Classifier:             GaussianNB
 ```
 
-Place any processed representations required to reproduce the reported experiments in:
+The grouping unit is the machining condition after removing only the repetition suffix `_R1`–`_R4`. Repetitions belonging to the same machining condition therefore remain together within an outer split.
+
+The saved validation report confirms **zero machining-condition overlap** between the training and held-out test partitions.
+
+---
+
+## Retention study: 10–50%
+
+The fixed retention curve is generated by:
+
+```bash
+python experiments/run_budget_curve_grouped.py
+```
+
+It reuses the frozen outer folds saved from the primary grouped experiment and evaluates:
 
 ```text
-data/processed/
+10%, 20%, 30%, 40%, and 50%
 ```
 
-Do not include temporary files, local caches, absolute-path configuration files, private notes, reviewer correspondence, manuscript source files intended only for submission, or copyrighted third-party material.
+of the training recordings.
 
-## Code
+The archived comparison includes:
 
-The public code is organized by function:
+- MRDS-IS-R
+- Wasserstein k-medoids + identical refinement
+- Facility Location + identical refinement
 
-- `code/preprocessing/`: loading, cleaning, segmentation, and sliding-window preparation;
-- `code/feature_extraction/`: computation of the descriptors used to represent local windows and recordings;
-- `code/mrds/`: finite MRDS subset selection and refinement;
-- `code/baselines/`: competing data-reduction or selection approaches;
-- `code/evaluation/`: downstream classification and condition-disjoint evaluation;
-- `code/utils/`: common utility functions.
-
-The downstream evaluation should use the same settings reported in the manuscript. Any random process should use explicitly documented seeds.
-
-## Reproducing the experiments
-
-A clean public release should allow a reader to reproduce the main results using relative paths only.
-
-Recommended execution order:
+Fold-wise scores, aggregate scores, selected recordings, and paired Wilcoxon/Holm comparisons are included in:
 
 ```text
-1. Prepare / verify metadata
-2. Preprocess the recordings
-3. Extract window-level descriptors
-4. Construct recording-level empirical distributions
-5. Run MRDS at the required retention levels
-6. Run baseline selection methods
-7. Train and evaluate the downstream classifier
-8. Export tables and figures
+results/grouped_budget_curve_all40/
 ```
 
-Exact commands and software requirements should be documented in `docs/REPRODUCIBILITY.md` after the final public scripts have been placed in this repository.
+---
 
-## Evaluation
+## Saved results supporting the manuscript
 
-The repository should reproduce the condition-disjoint evaluation scenarios described in the manuscript, including:
+### Primary 10% analysis
 
-- critical stability-boundary generalization;
-- unseen spindle-speed generalization;
-- workpiece/overhang generalization.
+`results/grouped_chatter_all40/` contains:
 
-Report the same performance metrics and retention levels used in the manuscript, and save machine-readable outputs under `results/tables/`.
+- `classification.csv`
+- `representativeness.csv`
+- `selected_recording_ids.csv`
+- `stagewise_objectives.csv`
+- `folds_grouped.csv`
+- `dataset_manifest_grouped.csv`
+- `feature_fields.json`
+- `split_summary.csv`
+- `validation_report.json`
+- `run_metadata.json`
 
-## Figures and experimental setup
+### Retention analysis
 
-Only the **experimental setup photographs** from the article should be included in this public repository. Do not include manuscript figures unrelated to the equipment/setup.
+`results/grouped_budget_curve_all40/` contains:
 
-Place the selected publication-safe setup image(s) in:
+- `outer_test_scores.csv`
+- `aggregate_scores.csv`
+- `paired_comparisons.csv`
+- `selected_recordings.csv`
+- `run_metadata.json`
 
-```text
-assets/
+Derived manuscript assets are also included under `results/figures/` and `results/tables/`.
+
+---
+
+## Reproducing the study
+
+### 1. Create an environment
+
+Python 3.10+ is recommended.
+
+```bash
+python -m venv .venv
 ```
 
-Recommended file name:
+Windows:
 
-```text
-assets/experimental_setup.jpg
+```bash
+.venv\Scripts\activate
 ```
 
-Use the following caption in the README:
+Linux/macOS:
 
-```markdown
-![Experimental setup for end milling and acoustic signal acquisition](assets/experimental_setup.jpg)
-
-*Experimental setup for end milling and acoustic signal acquisition.*
+```bash
+source .venv/bin/activate
 ```
 
-If more than one setup photograph is needed, keep them limited to device/setup views only and use consistent naming such as:
+Install dependencies:
 
-```text
-assets/experimental_setup_1.jpg
-assets/experimental_setup_2.jpg
+```bash
+pip install -r requirements.txt
 ```
 
-Before publishing the images, remove or crop any personally identifying information, laboratory access information, serial numbers that should not be public, computer screens containing private data, or third-party copyrighted graphics.
+### 2. Re-run the primary grouped analysis
 
-## Data and code availability
+To avoid overwriting archived results:
 
-The current recommended statement for a manuscript is provided in [`DATA_CODE_AVAILABILITY.md`](DATA_CODE_AVAILABILITY.md).
+```bash
+python experiments/run_chatter_grouped.py --input chatterData --output results/reproduction_primary
+```
 
-For a permanent scholarly citation, archive a tagged GitHub release in a DOI-issuing repository such as Zenodo and then update both the manuscript and `CITATION.cff` with the DOI.
+### 3. Re-run the 10–50% retention experiment
+
+```bash
+python experiments/run_budget_curve_grouped.py --input chatterData --outer-folds results/grouped_chatter_all40/folds_grouped.csv --output results/reproduction_budget
+```
+
+See [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) for provenance notes and known limitations.
+
+---
+
+## Reproducibility and provenance
+
+The public package separates:
+
+- direct computational inputs (`chatterData/*.mat`);
+- source code used by the reported grouped analyses;
+- saved numerical outputs supporting reported values;
+- derived manuscript assets;
+- experimental setup documentation.
+
+Three provenance limitations are documented rather than hidden:
+
+1. the currently archived `run_chatter_grouped.py` was modified after the historical 10% output was first generated, so the exact historical executed script is not available as a byte-identical snapshot;
+2. the generator for `grouped_chatter_primary.tex` is not preserved, although its reported values match the archived raw CSV outputs;
+3. editable-generation provenance is incomplete for some non-core manuscript figures, although the final figure assets are preserved.
+
+---
+
+## Code and data availability
+
+A manuscript-ready statement is provided in [`DATA_AND_CODE_AVAILABILITY.md`](DATA_AND_CODE_AVAILABILITY.md).
+
+After the public GitHub repository is created, replace the placeholder URL and create a tagged release corresponding to the submitted manuscript. A DOI-bearing archival snapshot is recommended for the final scholarly citation.
+
+---
 
 ## Citation
 
-If you use this repository, please cite the associated article and/or the archived software/data release.
+Citation metadata are provided in [`CITATION.cff`](CITATION.cff).
 
-GitHub can expose citation metadata from the root-level `CITATION.cff` file. Complete the author, repository URL, release version, and DOI fields before the final public release.
+Before public release, replace the author and repository placeholders. After article publication, add the article DOI under `preferred-citation`.
 
-## Versioning
-
-For the version supplied with a manuscript submission, create a fixed release, for example:
-
-```text
-v1.0.0
-```
-
-Use later releases for corrections or extensions rather than silently replacing files associated with the submitted manuscript.
+---
 
 ## License
 
-Licensing should be explicitly chosen before release. See [`LICENSES.md`](LICENSES.md) for a practical separation between source-code and research-data licensing.
+No code/data license is imposed automatically by this builder. The authors should select licenses compatible with institutional and co-author requirements before publication.
 
-## Contact
+---
 
-For questions about this repository, use the GitHub Issues page or the corresponding author contact information given in the associated manuscript.
+## Integrity
+
+`SHA256SUMS.txt` is generated automatically and can be used to verify that public files have not changed after release.
+
+---
+
+## Repository name
+
+**`MRDS-Chatter-Monitoring`**
+
+Suggested GitHub description:
+
+> Data, source code, saved results, and reproducibility materials for Meta-Rényi Distributional Sampling (MRDS) in recording-level machine-tool chatter monitoring.

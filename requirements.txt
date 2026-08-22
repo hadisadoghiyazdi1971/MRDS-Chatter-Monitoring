@@ -1,0 +1,10 @@
+numpy>=1.26
+scipy>=1.11
+pandas>=2.0
+scikit-learn>=1.3
+matplotlib>=3.8
+POT>=0.9.5
+# Optional official competitor packages:
+# aix360>=0.3.0
+# submodlib-py>=0.0.3
+# distclust
