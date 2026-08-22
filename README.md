@@ -140,26 +140,36 @@ Report the same performance metrics and retention levels used in the manuscript,
 
 ## Figures and experimental setup
 
-Publication-safe photographs and diagrams may be placed in `assets/`.
+Only the **experimental setup photographs** from the article should be included in this public repository. Do not include manuscript figures unrelated to the equipment/setup.
 
-Recommended files:
+Place the selected publication-safe setup image(s) in:
+
+```text
+assets/
+```
+
+Recommended file name:
 
 ```text
 assets/experimental_setup.jpg
-assets/machining_setup.jpg
-assets/sensor_configuration.jpg
-assets/mrds_workflow.png
 ```
 
-Example Markdown usage:
+Use the following caption in the README:
 
 ```markdown
-![Experimental setup](assets/experimental_setup.jpg)
+![Experimental setup for end milling and acoustic signal acquisition](assets/experimental_setup.jpg)
 
-*Experimental setup used for acquisition of the machining recordings.*
+*Experimental setup for end milling and acoustic signal acquisition.*
 ```
 
-Before publishing photographs, remove or crop any personally identifying information, laboratory access information, serial numbers that should not be public, computer screens containing private data, or third-party copyrighted graphics.
+If more than one setup photograph is needed, keep them limited to device/setup views only and use consistent naming such as:
+
+```text
+assets/experimental_setup_1.jpg
+assets/experimental_setup_2.jpg
+```
+
+Before publishing the images, remove or crop any personally identifying information, laboratory access information, serial numbers that should not be public, computer screens containing private data, or third-party copyrighted graphics.
 
 ## Data and code availability
 
