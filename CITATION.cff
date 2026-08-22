@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated research article and this archived release."
+title: "MRDS: Meta-Rényi Distributional Sampling for Recording-Level Chatter Monitoring"
+type: software
+authors:
+  - family-names: "[FAMILY NAME]"
+    given-names: "[GIVEN NAME]"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+version: "1.0.0"
+date-released: "2026-08-22"
+url: "[GITHUB_REPOSITORY_URL]"
+# doi: "[ZENODO_DOI]"
+# repository-code: "[GITHUB_REPOSITORY_URL]"
+
+# After the article is accepted/published, optionally add:
+# preferred-citation:
+#   type: article
+#   authors:
+#     - family-names: "[FAMILY NAME]"
+#       given-names: "[GIVEN NAME]"
+#   title: "[ARTICLE TITLE]"
+#   journal: "[JOURNAL]"
+#   year: 2026
+#   doi: "[ARTICLE DOI]"
