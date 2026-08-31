@@ -1,0 +1,200 @@
+﻿{
+    "policy":  "final_random_uniform_subset_predefined_seedset_v2",
+    "retention":  0.1,
+    "subset_size":  12,
+    "n_outer_splits":  20,
+    "classifier":  "standard unweighted GaussianNB",
+    "classifier_representation_dimensions":  200,
+    "alpha":  2.0,
+    "random_seed_by_repeat":  {
+                                  "2":  307,
+                                  "3":  401,
+                                  "4":  503,
+                                  "1":  211,
+                                  "0":  101
+                              },
+    "fold_seed_mapping":  [
+                              {
+                                  "budget":  0.1,
+                                  "fold":  0,
+                                  "m":  12,
+                                  "outer_fold_seed":  11,
+                                  "random_seed":  101,
+                                  "repeat":  0,
+                                  "split":  0
+                              },
+                              {
+                                  "budget":  0.1,
+                                  "fold":  1,
+                                  "m":  12,
+                                  "outer_fold_seed":  11,
+                                  "random_seed":  101,
+                                  "repeat":  0,
+                                  "split":  1
+                              },
+                              {
+                                  "budget":  0.1,
+                                  "fold":  2,
+                                  "m":  12,
+                                  "outer_fold_seed":  11,
+                                  "random_seed":  101,
+                                  "repeat":  0,
+                                  "split":  2
+                              },
+                              {
+                                  "budget":  0.1,
+                                  "fold":  3,
+                                  "m":  12,
+                                  "outer_fold_seed":  11,
+                                  "random_seed":  101,
+                                  "repeat":  0,
+                                  "split":  3
+                              },
+                              {
+                                  "budget":  0.1,
+                                  "fold":  0,
+                                  "m":  12,
+                                  "outer_fold_seed":  23,
+                                  "random_seed":  211,
+                                  "repeat":  1,
+                                  "split":  4
+                              },
+                              {
+                                  "budget":  0.1,
+                                  "fold":  1,
+                                  "m":  12,
+                                  "outer_fold_seed":  23,
+                                  "random_seed":  211,
+                                  "repeat":  1,
+                                  "split":  5
+                              },
+                              {
+                                  "budget":  0.1,
+                                  "fold":  2,
+                                  "m":  12,
+                                  "outer_fold_seed":  23,
+                                  "random_seed":  211,
+                                  "repeat":  1,
+                                  "split":  6
+                              },
+                              {
+                                  "budget":  0.1,
+                                  "fold":  3,
+                                  "m":  12,
+                                  "outer_fold_seed":  23,
+                                  "random_seed":  211,
+                                  "repeat":  1,
+                                  "split":  7
+                              },
+                              {
+                                  "budget":  0.1,
+                                  "fold":  0,
+                                  "m":  12,
+                                  "outer_fold_seed":  37,
+                                  "random_seed":  307,
+                                  "repeat":  2,
+                                  "split":  8
+                              },
+                              {
+                                  "budget":  0.1,
+                                  "fold":  1,
+                                  "m":  12,
+                                  "outer_fold_seed":  37,
+                                  "random_seed":  307,
+                                  "repeat":  2,
+                                  "split":  9
+                              },
+                              {
+                                  "budget":  0.1,
+                                  "fold":  2,
+                                  "m":  12,
+                                  "outer_fold_seed":  37,
+                                  "random_seed":  307,
+                                  "repeat":  2,
+                                  "split":  10
+                              },
+                              {
+                                  "budget":  0.1,
+                                  "fold":  3,
+                                  "m":  12,
+                                  "outer_fold_seed":  37,
+                                  "random_seed":  307,
+                                  "repeat":  2,
+                                  "split":  11
+                              },
+                              {
+                                  "budget":  0.1,
+                                  "fold":  0,
+                                  "m":  12,
+                                  "outer_fold_seed":  53,
+                                  "random_seed":  401,
+                                  "repeat":  3,
+                                  "split":  12
+                              },
+                              {
+                                  "budget":  0.1,
+                                  "fold":  1,
+                                  "m":  12,
+                                  "outer_fold_seed":  53,
+                                  "random_seed":  401,
+                                  "repeat":  3,
+                                  "split":  13
+                              },
+                              {
+                                  "budget":  0.1,
+                                  "fold":  2,
+                                  "m":  12,
+                                  "outer_fold_seed":  53,
+                                  "random_seed":  401,
+                                  "repeat":  3,
+                                  "split":  14
+                              },
+                              {
+                                  "budget":  0.1,
+                                  "fold":  3,
+                                  "m":  12,
+                                  "outer_fold_seed":  53,
+                                  "random_seed":  401,
+                                  "repeat":  3,
+                                  "split":  15
+                              },
+                              {
+                                  "budget":  0.1,
+                                  "fold":  0,
+                                  "m":  12,
+                                  "outer_fold_seed":  71,
+                                  "random_seed":  503,
+                                  "repeat":  4,
+                                  "split":  16
+                              },
+                              {
+                                  "budget":  0.1,
+                                  "fold":  1,
+                                  "m":  12,
+                                  "outer_fold_seed":  71,
+                                  "random_seed":  503,
+                                  "repeat":  4,
+                                  "split":  17
+                              },
+                              {
+                                  "budget":  0.1,
+                                  "fold":  2,
+                                  "m":  12,
+                                  "outer_fold_seed":  71,
+                                  "random_seed":  503,
+                                  "repeat":  4,
+                                  "split":  18
+                              },
+                              {
+                                  "budget":  0.1,
+                                  "fold":  3,
+                                  "m":  12,
+                                  "outer_fold_seed":  71,
+                                  "random_seed":  503,
+                                  "repeat":  4,
+                                  "split":  19
+                              }
+                          ],
+    "source_policy":  "final_random_uniform_subset_predefined_seedset_v2",
+    "scope":  "Primary 10% Random baseline only; no 20--50% Random results are included."
+}

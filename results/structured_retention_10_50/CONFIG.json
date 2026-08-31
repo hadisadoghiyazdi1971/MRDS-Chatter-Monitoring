@@ -1,0 +1,32 @@
+{
+  "alpha": 2.0,
+  "archive_recordings": 160,
+  "atoms_per_recording": 8,
+  "budgets": {
+    "0.10": 12,
+    "0.20": 24,
+    "0.30": 36,
+    "0.40": 48,
+    "0.50": 60
+  },
+  "classifier": "standard unweighted GaussianNB",
+  "classifier_representation_dimensions": 200,
+  "condition_groups": 40,
+  "folds": "20 frozen condition-disjoint outer folds",
+  "methods": [
+    "objective-stopped synthetic MRDS followed by duplicate-free projection",
+    "W2-k-medoids initializer",
+    "Facility Location initializer"
+  ],
+  "mixture_weight_optimization": false,
+  "one_swap_refinement": false,
+  "outer_training_recordings_per_fold": 120,
+  "seeds": [11, 23, 37, 53, 71],
+  "synthetic_stopping": {
+    "equation": "r_syn(s)=(J_(s-1)-J_s)/max(abs(J_initial),eps_float64)",
+    "required_consecutive_complete_sweeps": 3,
+    "safety_cap": 30,
+    "threshold": 0.001
+  },
+  "window_representation_dimensions": 40
+}

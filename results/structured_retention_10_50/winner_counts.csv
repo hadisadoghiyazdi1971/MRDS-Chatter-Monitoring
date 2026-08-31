@@ -1,0 +1,26 @@
+budget,comparison_type,method_or_comparison,wins,ties,losses,mean_difference
+0.1,minimum uniform J_alpha,MRDS,14,,,
+0.1,minimum uniform J_alpha,W2-k-medoids,4,,,
+0.1,minimum uniform J_alpha,Facility Location,2,,,
+0.1,balanced accuracy descriptive,MRDS vs W2-k-medoids,12,5.0,3.0,0.07247023809523812
+0.1,balanced accuracy descriptive,MRDS vs Facility Location,12,2.0,6.0,0.08921130952380958
+0.2,minimum uniform J_alpha,MRDS,20,,,
+0.2,minimum uniform J_alpha,W2-k-medoids,0,,,
+0.2,minimum uniform J_alpha,Facility Location,0,,,
+0.2,balanced accuracy descriptive,MRDS vs W2-k-medoids,0,9.0,11.0,-0.04985119047619048
+0.2,balanced accuracy descriptive,MRDS vs Facility Location,1,8.0,11.0,-0.03757440476190475
+0.3,minimum uniform J_alpha,MRDS,20,,,
+0.3,minimum uniform J_alpha,W2-k-medoids,0,,,
+0.3,minimum uniform J_alpha,Facility Location,0,,,
+0.3,balanced accuracy descriptive,MRDS vs W2-k-medoids,1,9.0,10.0,-0.03311011904761905
+0.3,balanced accuracy descriptive,MRDS vs Facility Location,1,8.0,11.0,-0.02953869047619049
+0.4,minimum uniform J_alpha,MRDS,20,,,
+0.4,minimum uniform J_alpha,W2-k-medoids,0,,,
+0.4,minimum uniform J_alpha,Facility Location,0,,,
+0.4,balanced accuracy descriptive,MRDS vs W2-k-medoids,3,6.0,11.0,-0.017038690476190478
+0.4,balanced accuracy descriptive,MRDS vs Facility Location,4,6.0,10.0,-0.010491071428571419
+0.5,minimum uniform J_alpha,MRDS,20,,,
+0.5,minimum uniform J_alpha,W2-k-medoids,0,,,
+0.5,minimum uniform J_alpha,Facility Location,0,,,
+0.5,balanced accuracy descriptive,MRDS vs W2-k-medoids,5,8.0,7.0,-0.004464285714285698
+0.5,balanced accuracy descriptive,MRDS vs Facility Location,6,7.0,7.0,-0.0023809523809523612

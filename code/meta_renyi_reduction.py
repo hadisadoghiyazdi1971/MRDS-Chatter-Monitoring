@@ -6,13 +6,12 @@ One observation is a bag / empirical probability distribution:
     bag_i = {z_i1, ..., z_iT_i}, z_ir in R^d.
 
 The proposed finite-anchor objective is the exact Renyi divergence between
-probability vectors p and q evaluated on the observed meta-samples. In the
-confirmatory path, prototype atoms are updated with barycentric projections of
-exact balanced OT couplings and an Armijo backtracking line search.
+probability vectors p and q evaluated on the observed meta-samples. Prototype
+atoms are updated with barycentric projections of entropic OT couplings and an
+Armijo backtracking line search.
 
-Python Optimal Transport (POT) is required for the confirmatory ``emd_exact``
-backend. The optional diagnostic Sinkhorn backend uses POT when available and
-otherwise uses a NumPy fallback.
+The file is intentionally self-contained. If Python Optimal Transport (POT) is
+installed, it is used; otherwise a NumPy Sinkhorn fallback is used.
 
 Input formats
 -------------

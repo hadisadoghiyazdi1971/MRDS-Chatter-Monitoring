@@ -237,10 +237,8 @@ def refine_observed_subset(
     """Best-improvement one-swap refinement on the exact finite objective.
 
     Every accepted swap strictly decreases the same objective used for final
-    evaluation.  If a complete pass accepts no swap, the returned subset is a
-    one-swap local optimum for the implemented finite-run comparison, up to
-    improvement_tol.  Exhausting max_passes can terminate before that condition
-    is established.
+    evaluation.  Because the number of m-subsets is finite, the procedure
+    terminates at a one-swap local optimum (up to improvement_tol).
     """
     k = _validate_kernel(kernel)
     selected = np.asarray(initial_selected, dtype=np.int64).copy()

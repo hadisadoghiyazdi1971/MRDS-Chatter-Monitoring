@@ -1,0 +1,301 @@
+split,repeat,fold,seed,budget,m,method,stage,uniform_J_alpha,J_synthetic_final,source
+0,0,0,11,0.1,12,Facility Location,uniform observed subset before weights and swaps,0.01312803841567162,,reused validated 10% ablation
+0,0,0,11,0.1,12,MRDS,uniform observed subset before weights and swaps,0.007523799151945744,0.002812515380807488,reused validated 10% ablation
+0,0,0,11,0.1,12,W2-k-medoids,uniform observed subset before weights and swaps,0.011664131781808439,,reused validated 10% ablation
+1,0,1,11,0.1,12,Facility Location,uniform observed subset before weights and swaps,0.02300914972915268,,reused validated 10% ablation
+1,0,1,11,0.1,12,MRDS,uniform observed subset before weights and swaps,0.017972649178609006,0.002416841367981416,reused validated 10% ablation
+1,0,1,11,0.1,12,W2-k-medoids,uniform observed subset before weights and swaps,0.022474501601407335,,reused validated 10% ablation
+2,0,2,11,0.1,12,Facility Location,uniform observed subset before weights and swaps,0.013074502146451871,,reused validated 10% ablation
+2,0,2,11,0.1,12,MRDS,uniform observed subset before weights and swaps,0.007357629018971965,0.002731807139628855,reused validated 10% ablation
+2,0,2,11,0.1,12,W2-k-medoids,uniform observed subset before weights and swaps,0.008787948616655708,,reused validated 10% ablation
+3,0,3,11,0.1,12,Facility Location,uniform observed subset before weights and swaps,0.008845741878341452,,reused validated 10% ablation
+3,0,3,11,0.1,12,MRDS,uniform observed subset before weights and swaps,0.013612575087465386,7.65014885030913e-06,reused validated 10% ablation
+3,0,3,11,0.1,12,W2-k-medoids,uniform observed subset before weights and swaps,0.007100501629456738,,reused validated 10% ablation
+4,1,0,23,0.1,12,Facility Location,uniform observed subset before weights and swaps,0.013424219287003382,,reused validated 10% ablation
+4,1,0,23,0.1,12,MRDS,uniform observed subset before weights and swaps,0.010051395191057853,0.0016504175603728336,reused validated 10% ablation
+4,1,0,23,0.1,12,W2-k-medoids,uniform observed subset before weights and swaps,0.012302481310034639,,reused validated 10% ablation
+5,1,1,23,0.1,12,Facility Location,uniform observed subset before weights and swaps,0.017847336432373406,,reused validated 10% ablation
+5,1,1,23,0.1,12,MRDS,uniform observed subset before weights and swaps,0.009118046105685406,0.001578849040802311,reused validated 10% ablation
+5,1,1,23,0.1,12,W2-k-medoids,uniform observed subset before weights and swaps,0.011148975811109435,,reused validated 10% ablation
+6,1,2,23,0.1,12,Facility Location,uniform observed subset before weights and swaps,0.01964654483224398,,reused validated 10% ablation
+6,1,2,23,0.1,12,MRDS,uniform observed subset before weights and swaps,0.01744727541264211,0.002235553154586524,reused validated 10% ablation
+6,1,2,23,0.1,12,W2-k-medoids,uniform observed subset before weights and swaps,0.01634565679167154,,reused validated 10% ablation
+7,1,3,23,0.1,12,Facility Location,uniform observed subset before weights and swaps,0.011401761697195461,,reused validated 10% ablation
+7,1,3,23,0.1,12,MRDS,uniform observed subset before weights and swaps,0.008146010815680282,0.00274678018257728,reused validated 10% ablation
+7,1,3,23,0.1,12,W2-k-medoids,uniform observed subset before weights and swaps,0.01148562494010733,,reused validated 10% ablation
+8,2,0,37,0.1,12,Facility Location,uniform observed subset before weights and swaps,0.010159097411616759,,reused validated 10% ablation
+8,2,0,37,0.1,12,MRDS,uniform observed subset before weights and swaps,0.0032774099465296305,0.0022735359651976936,reused validated 10% ablation
+8,2,0,37,0.1,12,W2-k-medoids,uniform observed subset before weights and swaps,0.005155702451451936,,reused validated 10% ablation
+9,2,1,37,0.1,12,Facility Location,uniform observed subset before weights and swaps,0.018909409360045204,,reused validated 10% ablation
+9,2,1,37,0.1,12,MRDS,uniform observed subset before weights and swaps,0.014220878626870603,0.00372159882163438,reused validated 10% ablation
+9,2,1,37,0.1,12,W2-k-medoids,uniform observed subset before weights and swaps,0.01655564177921377,,reused validated 10% ablation
+10,2,2,37,0.1,12,Facility Location,uniform observed subset before weights and swaps,0.01465487668421639,,reused validated 10% ablation
+10,2,2,37,0.1,12,MRDS,uniform observed subset before weights and swaps,0.018940960516295888,0.0023902183092034224,reused validated 10% ablation
+10,2,2,37,0.1,12,W2-k-medoids,uniform observed subset before weights and swaps,0.017869356612627115,,reused validated 10% ablation
+11,2,3,37,0.1,12,Facility Location,uniform observed subset before weights and swaps,0.017460163022535603,,reused validated 10% ablation
+11,2,3,37,0.1,12,MRDS,uniform observed subset before weights and swaps,0.016131760274202912,0.0018663397175668255,reused validated 10% ablation
+11,2,3,37,0.1,12,W2-k-medoids,uniform observed subset before weights and swaps,0.015271941812467908,,reused validated 10% ablation
+12,3,0,53,0.1,12,Facility Location,uniform observed subset before weights and swaps,0.012512775099002175,,reused validated 10% ablation
+12,3,0,53,0.1,12,MRDS,uniform observed subset before weights and swaps,0.009133657484407361,0.002808252252843197,reused validated 10% ablation
+12,3,0,53,0.1,12,W2-k-medoids,uniform observed subset before weights and swaps,0.011633572272432125,,reused validated 10% ablation
+13,3,1,53,0.1,12,Facility Location,uniform observed subset before weights and swaps,0.011881383372959839,,reused validated 10% ablation
+13,3,1,53,0.1,12,MRDS,uniform observed subset before weights and swaps,0.010170939970037292,0.0015807055822953148,reused validated 10% ablation
+13,3,1,53,0.1,12,W2-k-medoids,uniform observed subset before weights and swaps,0.012285516106685707,,reused validated 10% ablation
+14,3,2,53,0.1,12,Facility Location,uniform observed subset before weights and swaps,0.011331886261266784,,reused validated 10% ablation
+14,3,2,53,0.1,12,MRDS,uniform observed subset before weights and swaps,0.019779415876685285,0.0021256790788738334,reused validated 10% ablation
+14,3,2,53,0.1,12,W2-k-medoids,uniform observed subset before weights and swaps,0.011556144356310328,,reused validated 10% ablation
+15,3,3,53,0.1,12,Facility Location,uniform observed subset before weights and swaps,0.012855007733034916,,reused validated 10% ablation
+15,3,3,53,0.1,12,MRDS,uniform observed subset before weights and swaps,0.009031254350408751,0.0016995061970366064,reused validated 10% ablation
+15,3,3,53,0.1,12,W2-k-medoids,uniform observed subset before weights and swaps,0.014945684516135132,,reused validated 10% ablation
+16,4,0,71,0.1,12,Facility Location,uniform observed subset before weights and swaps,0.013545762798188627,,reused validated 10% ablation
+16,4,0,71,0.1,12,MRDS,uniform observed subset before weights and swaps,0.019027061106839525,0.002177106657881804,reused validated 10% ablation
+16,4,0,71,0.1,12,W2-k-medoids,uniform observed subset before weights and swaps,0.013161586105627622,,reused validated 10% ablation
+17,4,1,71,0.1,12,Facility Location,uniform observed subset before weights and swaps,0.01074107811103341,,reused validated 10% ablation
+17,4,1,71,0.1,12,MRDS,uniform observed subset before weights and swaps,0.007615144889413306,0.001562047632940242,reused validated 10% ablation
+17,4,1,71,0.1,12,W2-k-medoids,uniform observed subset before weights and swaps,0.011765256770928824,,reused validated 10% ablation
+18,4,2,71,0.1,12,Facility Location,uniform observed subset before weights and swaps,0.012935755159929946,,reused validated 10% ablation
+18,4,2,71,0.1,12,MRDS,uniform observed subset before weights and swaps,0.00699215797279663,0.0014126827517856198,reused validated 10% ablation
+18,4,2,71,0.1,12,W2-k-medoids,uniform observed subset before weights and swaps,0.010524884164461403,,reused validated 10% ablation
+19,4,3,71,0.1,12,Facility Location,uniform observed subset before weights and swaps,0.013105585737544315,,reused validated 10% ablation
+19,4,3,71,0.1,12,MRDS,uniform observed subset before weights and swaps,0.01212316854585697,0.0036845245388483485,reused validated 10% ablation
+19,4,3,71,0.1,12,W2-k-medoids,uniform observed subset before weights and swaps,0.014453223133837729,,reused validated 10% ablation
+0,0,0,11,0.2,24,Facility Location,uniform observed subset before weights and swaps,0.005400081826735679,,newly computed initializer/projection-only candidate
+0,0,0,11,0.2,24,MRDS,uniform observed subset before weights and swaps,0.00406629048883426,0.0008554760770528882,newly computed initializer/projection-only candidate
+0,0,0,11,0.2,24,W2-k-medoids,uniform observed subset before weights and swaps,0.006903274736015003,,newly computed initializer/projection-only candidate
+1,0,1,11,0.2,24,Facility Location,uniform observed subset before weights and swaps,0.01252320619868544,,newly computed initializer/projection-only candidate
+1,0,1,11,0.2,24,MRDS,uniform observed subset before weights and swaps,0.004857646351803497,0.0005618532818851778,newly computed initializer/projection-only candidate
+1,0,1,11,0.2,24,W2-k-medoids,uniform observed subset before weights and swaps,0.009225236509042313,,newly computed initializer/projection-only candidate
+2,0,2,11,0.2,24,Facility Location,uniform observed subset before weights and swaps,0.005965894759345742,,newly computed initializer/projection-only candidate
+2,0,2,11,0.2,24,MRDS,uniform observed subset before weights and swaps,0.002867548385765437,0.0008528080942857029,newly computed initializer/projection-only candidate
+2,0,2,11,0.2,24,W2-k-medoids,uniform observed subset before weights and swaps,0.005017843075339661,,newly computed initializer/projection-only candidate
+3,0,3,11,0.2,24,Facility Location,uniform observed subset before weights and swaps,0.016084271782473,,newly computed initializer/projection-only candidate
+3,0,3,11,0.2,24,MRDS,uniform observed subset before weights and swaps,0.003984804769542549,1.4267370108195315e-06,newly computed initializer/projection-only candidate
+3,0,3,11,0.2,24,W2-k-medoids,uniform observed subset before weights and swaps,0.0065769109469304326,,newly computed initializer/projection-only candidate
+4,1,0,23,0.2,24,Facility Location,uniform observed subset before weights and swaps,0.00898839134296601,,newly computed initializer/projection-only candidate
+4,1,0,23,0.2,24,MRDS,uniform observed subset before weights and swaps,0.0036123919277788108,0.0004942540283357218,newly computed initializer/projection-only candidate
+4,1,0,23,0.2,24,W2-k-medoids,uniform observed subset before weights and swaps,0.00703969964998865,,newly computed initializer/projection-only candidate
+5,1,1,23,0.2,24,Facility Location,uniform observed subset before weights and swaps,0.008073875270533075,,newly computed initializer/projection-only candidate
+5,1,1,23,0.2,24,MRDS,uniform observed subset before weights and swaps,0.0029735572913989223,0.00045863018752317436,newly computed initializer/projection-only candidate
+5,1,1,23,0.2,24,W2-k-medoids,uniform observed subset before weights and swaps,0.006893800007099064,,newly computed initializer/projection-only candidate
+6,1,2,23,0.2,24,Facility Location,uniform observed subset before weights and swaps,0.006981122834294854,,newly computed initializer/projection-only candidate
+6,1,2,23,0.2,24,MRDS,uniform observed subset before weights and swaps,0.004266230326815865,0.0005072262296504105,newly computed initializer/projection-only candidate
+6,1,2,23,0.2,24,W2-k-medoids,uniform observed subset before weights and swaps,0.005763272178341755,,newly computed initializer/projection-only candidate
+7,1,3,23,0.2,24,Facility Location,uniform observed subset before weights and swaps,0.007633557481362687,,newly computed initializer/projection-only candidate
+7,1,3,23,0.2,24,MRDS,uniform observed subset before weights and swaps,0.0027951301091618344,0.0008378654204140431,newly computed initializer/projection-only candidate
+7,1,3,23,0.2,24,W2-k-medoids,uniform observed subset before weights and swaps,0.004986020555846962,,newly computed initializer/projection-only candidate
+8,2,0,37,0.2,24,Facility Location,uniform observed subset before weights and swaps,0.006443226219031368,,newly computed initializer/projection-only candidate
+8,2,0,37,0.2,24,MRDS,uniform observed subset before weights and swaps,0.0013530457203002517,0.0007638208039326195,newly computed initializer/projection-only candidate
+8,2,0,37,0.2,24,W2-k-medoids,uniform observed subset before weights and swaps,0.003893061562678798,,newly computed initializer/projection-only candidate
+9,2,1,37,0.2,24,Facility Location,uniform observed subset before weights and swaps,0.013211326507667398,,newly computed initializer/projection-only candidate
+9,2,1,37,0.2,24,MRDS,uniform observed subset before weights and swaps,0.0044880982278813686,0.0009747637956868089,newly computed initializer/projection-only candidate
+9,2,1,37,0.2,24,W2-k-medoids,uniform observed subset before weights and swaps,0.0074863683183457605,,newly computed initializer/projection-only candidate
+10,2,2,37,0.2,24,Facility Location,uniform observed subset before weights and swaps,0.010880247520037903,,newly computed initializer/projection-only candidate
+10,2,2,37,0.2,24,MRDS,uniform observed subset before weights and swaps,0.004887656891171306,0.0005574333224895603,newly computed initializer/projection-only candidate
+10,2,2,37,0.2,24,W2-k-medoids,uniform observed subset before weights and swaps,0.008914215625957716,,newly computed initializer/projection-only candidate
+11,2,3,37,0.2,24,Facility Location,uniform observed subset before weights and swaps,0.008470030327154569,,newly computed initializer/projection-only candidate
+11,2,3,37,0.2,24,MRDS,uniform observed subset before weights and swaps,0.0041817438529281855,0.0004922147361325427,newly computed initializer/projection-only candidate
+11,2,3,37,0.2,24,W2-k-medoids,uniform observed subset before weights and swaps,0.007657904776664668,,newly computed initializer/projection-only candidate
+12,3,0,53,0.2,24,Facility Location,uniform observed subset before weights and swaps,0.008148523836692288,,newly computed initializer/projection-only candidate
+12,3,0,53,0.2,24,MRDS,uniform observed subset before weights and swaps,0.0034437774424977744,0.0008653644910605618,newly computed initializer/projection-only candidate
+12,3,0,53,0.2,24,W2-k-medoids,uniform observed subset before weights and swaps,0.007473143512079231,,newly computed initializer/projection-only candidate
+13,3,1,53,0.2,24,Facility Location,uniform observed subset before weights and swaps,0.0159571816312868,,newly computed initializer/projection-only candidate
+13,3,1,53,0.2,24,MRDS,uniform observed subset before weights and swaps,0.0030909100033067504,0.0004607240346818741,newly computed initializer/projection-only candidate
+13,3,1,53,0.2,24,W2-k-medoids,uniform observed subset before weights and swaps,0.009515437482111545,,newly computed initializer/projection-only candidate
+14,3,2,53,0.2,24,Facility Location,uniform observed subset before weights and swaps,0.009184153960513022,,newly computed initializer/projection-only candidate
+14,3,2,53,0.2,24,MRDS,uniform observed subset before weights and swaps,0.004451782657454506,0.0005066382698420655,newly computed initializer/projection-only candidate
+14,3,2,53,0.2,24,W2-k-medoids,uniform observed subset before weights and swaps,0.006582831943615812,,newly computed initializer/projection-only candidate
+15,3,3,53,0.2,24,Facility Location,uniform observed subset before weights and swaps,0.00968022716138836,,newly computed initializer/projection-only candidate
+15,3,3,53,0.2,24,MRDS,uniform observed subset before weights and swaps,0.0037925611933632614,0.00046474197818533873,newly computed initializer/projection-only candidate
+15,3,3,53,0.2,24,W2-k-medoids,uniform observed subset before weights and swaps,0.008844334416614415,,newly computed initializer/projection-only candidate
+16,4,0,71,0.2,24,Facility Location,uniform observed subset before weights and swaps,0.009709593233304382,,newly computed initializer/projection-only candidate
+16,4,0,71,0.2,24,MRDS,uniform observed subset before weights and swaps,0.00577302332481739,0.0005244666952649563,newly computed initializer/projection-only candidate
+16,4,0,71,0.2,24,W2-k-medoids,uniform observed subset before weights and swaps,0.007651276165438812,,newly computed initializer/projection-only candidate
+17,4,1,71,0.2,24,Facility Location,uniform observed subset before weights and swaps,0.008494202871184575,,newly computed initializer/projection-only candidate
+17,4,1,71,0.2,24,MRDS,uniform observed subset before weights and swaps,0.0028432356958705183,0.0004348770368393682,newly computed initializer/projection-only candidate
+17,4,1,71,0.2,24,W2-k-medoids,uniform observed subset before weights and swaps,0.004123206075037012,,newly computed initializer/projection-only candidate
+18,4,2,71,0.2,24,Facility Location,uniform observed subset before weights and swaps,0.008193591516136859,,newly computed initializer/projection-only candidate
+18,4,2,71,0.2,24,MRDS,uniform observed subset before weights and swaps,0.0029053287576963206,0.0004384773126285288,newly computed initializer/projection-only candidate
+18,4,2,71,0.2,24,W2-k-medoids,uniform observed subset before weights and swaps,0.007340438909048667,,newly computed initializer/projection-only candidate
+19,4,3,71,0.2,24,Facility Location,uniform observed subset before weights and swaps,0.011018223530765989,,newly computed initializer/projection-only candidate
+19,4,3,71,0.2,24,MRDS,uniform observed subset before weights and swaps,0.0038164398720325985,0.0009630820728115887,newly computed initializer/projection-only candidate
+19,4,3,71,0.2,24,W2-k-medoids,uniform observed subset before weights and swaps,0.007946542155673447,,newly computed initializer/projection-only candidate
+0,0,0,11,0.3,36,Facility Location,uniform observed subset before weights and swaps,0.0036637521446718758,,newly computed initializer/projection-only candidate
+0,0,0,11,0.3,36,MRDS,uniform observed subset before weights and swaps,0.0023292088567697503,0.00039216462045185414,newly computed initializer/projection-only candidate
+0,0,0,11,0.3,36,W2-k-medoids,uniform observed subset before weights and swaps,0.005569860540746289,,newly computed initializer/projection-only candidate
+1,0,1,11,0.3,36,Facility Location,uniform observed subset before weights and swaps,0.0036692592808440757,,newly computed initializer/projection-only candidate
+1,0,1,11,0.3,36,MRDS,uniform observed subset before weights and swaps,0.0028261443286419895,0.00023647532837653534,newly computed initializer/projection-only candidate
+1,0,1,11,0.3,36,W2-k-medoids,uniform observed subset before weights and swaps,0.004632516883800176,,newly computed initializer/projection-only candidate
+2,0,2,11,0.3,36,Facility Location,uniform observed subset before weights and swaps,0.002990052449238207,,newly computed initializer/projection-only candidate
+2,0,2,11,0.3,36,MRDS,uniform observed subset before weights and swaps,0.0018088324710715592,0.0003819740162869397,newly computed initializer/projection-only candidate
+2,0,2,11,0.3,36,W2-k-medoids,uniform observed subset before weights and swaps,0.0032785779677372254,,newly computed initializer/projection-only candidate
+3,0,3,11,0.3,36,Facility Location,uniform observed subset before weights and swaps,0.004559389305115762,,newly computed initializer/projection-only candidate
+3,0,3,11,0.3,36,MRDS,uniform observed subset before weights and swaps,0.0018874309330938021,7.131800009832912e-07,newly computed initializer/projection-only candidate
+3,0,3,11,0.3,36,W2-k-medoids,uniform observed subset before weights and swaps,0.007126255698245564,,newly computed initializer/projection-only candidate
+4,1,0,23,0.3,36,Facility Location,uniform observed subset before weights and swaps,0.004215965433917264,,newly computed initializer/projection-only candidate
+4,1,0,23,0.3,36,MRDS,uniform observed subset before weights and swaps,0.0017750765838161747,0.0002134700537274728,newly computed initializer/projection-only candidate
+4,1,0,23,0.3,36,W2-k-medoids,uniform observed subset before weights and swaps,0.004343771507146342,,newly computed initializer/projection-only candidate
+5,1,1,23,0.3,36,Facility Location,uniform observed subset before weights and swaps,0.0032799288975817313,,newly computed initializer/projection-only candidate
+5,1,1,23,0.3,36,MRDS,uniform observed subset before weights and swaps,0.0015865592138180503,0.00020852414382611475,newly computed initializer/projection-only candidate
+5,1,1,23,0.3,36,W2-k-medoids,uniform observed subset before weights and swaps,0.004611983087123112,,newly computed initializer/projection-only candidate
+6,1,2,23,0.3,36,Facility Location,uniform observed subset before weights and swaps,0.0054484302186340716,,newly computed initializer/projection-only candidate
+6,1,2,23,0.3,36,MRDS,uniform observed subset before weights and swaps,0.002373210756635085,0.00022024590601643588,newly computed initializer/projection-only candidate
+6,1,2,23,0.3,36,W2-k-medoids,uniform observed subset before weights and swaps,0.004567113975072476,,newly computed initializer/projection-only candidate
+7,1,3,23,0.3,36,Facility Location,uniform observed subset before weights and swaps,0.004248710068747966,,newly computed initializer/projection-only candidate
+7,1,3,23,0.3,36,MRDS,uniform observed subset before weights and swaps,0.0019567622397997507,0.0003833563109987353,newly computed initializer/projection-only candidate
+7,1,3,23,0.3,36,W2-k-medoids,uniform observed subset before weights and swaps,0.0052577270616757585,,newly computed initializer/projection-only candidate
+8,2,0,37,0.3,36,Facility Location,uniform observed subset before weights and swaps,0.004952333176245491,,newly computed initializer/projection-only candidate
+8,2,0,37,0.3,36,MRDS,uniform observed subset before weights and swaps,0.000789043456067696,0.00036741176660045374,newly computed initializer/projection-only candidate
+8,2,0,37,0.3,36,W2-k-medoids,uniform observed subset before weights and swaps,0.006477795599464369,,newly computed initializer/projection-only candidate
+9,2,1,37,0.3,36,Facility Location,uniform observed subset before weights and swaps,0.004652105659802218,,newly computed initializer/projection-only candidate
+9,2,1,37,0.3,36,MRDS,uniform observed subset before weights and swaps,0.0025747624827359484,0.00043181104281987817,newly computed initializer/projection-only candidate
+9,2,1,37,0.3,36,W2-k-medoids,uniform observed subset before weights and swaps,0.004377933463576988,,newly computed initializer/projection-only candidate
+10,2,2,37,0.3,36,Facility Location,uniform observed subset before weights and swaps,0.00491419995398336,,newly computed initializer/projection-only candidate
+10,2,2,37,0.3,36,MRDS,uniform observed subset before weights and swaps,0.002877225182048781,0.00023940021315833643,newly computed initializer/projection-only candidate
+10,2,2,37,0.3,36,W2-k-medoids,uniform observed subset before weights and swaps,0.004997986703051298,,newly computed initializer/projection-only candidate
+11,2,3,37,0.3,36,Facility Location,uniform observed subset before weights and swaps,0.0029785887927515605,,newly computed initializer/projection-only candidate
+11,2,3,37,0.3,36,MRDS,uniform observed subset before weights and swaps,0.002147867774350205,0.00021561520808944387,newly computed initializer/projection-only candidate
+11,2,3,37,0.3,36,W2-k-medoids,uniform observed subset before weights and swaps,0.0032985362078970406,,newly computed initializer/projection-only candidate
+12,3,0,53,0.3,36,Facility Location,uniform observed subset before weights and swaps,0.005173820476847965,,newly computed initializer/projection-only candidate
+12,3,0,53,0.3,36,MRDS,uniform observed subset before weights and swaps,0.0019952858920501285,0.00039793510631045835,newly computed initializer/projection-only candidate
+12,3,0,53,0.3,36,W2-k-medoids,uniform observed subset before weights and swaps,0.005483432936595862,,newly computed initializer/projection-only candidate
+13,3,1,53,0.3,36,Facility Location,uniform observed subset before weights and swaps,0.004729538873061138,,newly computed initializer/projection-only candidate
+13,3,1,53,0.3,36,MRDS,uniform observed subset before weights and swaps,0.0018001614666748149,0.00021202778256116766,newly computed initializer/projection-only candidate
+13,3,1,53,0.3,36,W2-k-medoids,uniform observed subset before weights and swaps,0.005183393245969515,,newly computed initializer/projection-only candidate
+14,3,2,53,0.3,36,Facility Location,uniform observed subset before weights and swaps,0.0034608682387284465,,newly computed initializer/projection-only candidate
+14,3,2,53,0.3,36,MRDS,uniform observed subset before weights and swaps,0.002557700788771995,0.0002188101242089656,newly computed initializer/projection-only candidate
+14,3,2,53,0.3,36,W2-k-medoids,uniform observed subset before weights and swaps,0.003971000483242653,,newly computed initializer/projection-only candidate
+15,3,3,53,0.3,36,Facility Location,uniform observed subset before weights and swaps,0.005131845940286216,,newly computed initializer/projection-only candidate
+15,3,3,53,0.3,36,MRDS,uniform observed subset before weights and swaps,0.002013244712399155,0.00020268347457520763,newly computed initializer/projection-only candidate
+15,3,3,53,0.3,36,W2-k-medoids,uniform observed subset before weights and swaps,0.005749828900373012,,newly computed initializer/projection-only candidate
+16,4,0,71,0.3,36,Facility Location,uniform observed subset before weights and swaps,0.004618334462730489,,newly computed initializer/projection-only candidate
+16,4,0,71,0.3,36,MRDS,uniform observed subset before weights and swaps,0.002318284304077568,0.00023009032932797072,newly computed initializer/projection-only candidate
+16,4,0,71,0.3,36,W2-k-medoids,uniform observed subset before weights and swaps,0.003324618325135804,,newly computed initializer/projection-only candidate
+17,4,1,71,0.3,36,Facility Location,uniform observed subset before weights and swaps,0.004383877288143536,,newly computed initializer/projection-only candidate
+17,4,1,71,0.3,36,MRDS,uniform observed subset before weights and swaps,0.0021155481618707755,0.00019435661664657516,newly computed initializer/projection-only candidate
+17,4,1,71,0.3,36,W2-k-medoids,uniform observed subset before weights and swaps,0.0061393795057832785,,newly computed initializer/projection-only candidate
+18,4,2,71,0.3,36,Facility Location,uniform observed subset before weights and swaps,0.0018694858854131577,,newly computed initializer/projection-only candidate
+18,4,2,71,0.3,36,MRDS,uniform observed subset before weights and swaps,0.0013998277849512028,0.00020280231306443573,newly computed initializer/projection-only candidate
+18,4,2,71,0.3,36,W2-k-medoids,uniform observed subset before weights and swaps,0.0021250068935141308,,newly computed initializer/projection-only candidate
+19,4,3,71,0.3,36,Facility Location,uniform observed subset before weights and swaps,0.006231153155990775,,newly computed initializer/projection-only candidate
+19,4,3,71,0.3,36,MRDS,uniform observed subset before weights and swaps,0.0023261039343126315,0.0004257795961110636,newly computed initializer/projection-only candidate
+19,4,3,71,0.3,36,W2-k-medoids,uniform observed subset before weights and swaps,0.006880242238650834,,newly computed initializer/projection-only candidate
+0,0,0,11,0.4,48,Facility Location,uniform observed subset before weights and swaps,0.004181119062597373,,newly computed initializer/projection-only candidate
+0,0,0,11,0.4,48,MRDS,uniform observed subset before weights and swaps,0.001483345484636744,0.00019637640292331768,newly computed initializer/projection-only candidate
+0,0,0,11,0.4,48,W2-k-medoids,uniform observed subset before weights and swaps,0.005236991234512431,,newly computed initializer/projection-only candidate
+1,0,1,11,0.4,48,Facility Location,uniform observed subset before weights and swaps,0.0045689885787380475,,newly computed initializer/projection-only candidate
+1,0,1,11,0.4,48,MRDS,uniform observed subset before weights and swaps,0.001338862174781783,0.00011675012017779845,newly computed initializer/projection-only candidate
+1,0,1,11,0.4,48,W2-k-medoids,uniform observed subset before weights and swaps,0.005254098612395404,,newly computed initializer/projection-only candidate
+2,0,2,11,0.4,48,Facility Location,uniform observed subset before weights and swaps,0.002844503792617627,,newly computed initializer/projection-only candidate
+2,0,2,11,0.4,48,MRDS,uniform observed subset before weights and swaps,0.0013302394519384086,0.00019417596618509812,newly computed initializer/projection-only candidate
+2,0,2,11,0.4,48,W2-k-medoids,uniform observed subset before weights and swaps,0.0023920737488989916,,newly computed initializer/projection-only candidate
+3,0,3,11,0.4,48,Facility Location,uniform observed subset before weights and swaps,0.004613354810266635,,newly computed initializer/projection-only candidate
+3,0,3,11,0.4,48,MRDS,uniform observed subset before weights and swaps,0.0010394052529910205,1.7286527394138466e-06,newly computed initializer/projection-only candidate
+3,0,3,11,0.4,48,W2-k-medoids,uniform observed subset before weights and swaps,0.005265783818829085,,newly computed initializer/projection-only candidate
+4,1,0,23,0.4,48,Facility Location,uniform observed subset before weights and swaps,0.0036980297349966,,newly computed initializer/projection-only candidate
+4,1,0,23,0.4,48,MRDS,uniform observed subset before weights and swaps,0.0013059759195342734,0.00010685874793966914,newly computed initializer/projection-only candidate
+4,1,0,23,0.4,48,W2-k-medoids,uniform observed subset before weights and swaps,0.0025964247387067776,,newly computed initializer/projection-only candidate
+5,1,1,23,0.4,48,Facility Location,uniform observed subset before weights and swaps,0.003634907285143708,,newly computed initializer/projection-only candidate
+5,1,1,23,0.4,48,MRDS,uniform observed subset before weights and swaps,0.0012065562320456795,0.00010567764501162844,newly computed initializer/projection-only candidate
+5,1,1,23,0.4,48,W2-k-medoids,uniform observed subset before weights and swaps,0.003700487996188168,,newly computed initializer/projection-only candidate
+6,1,2,23,0.4,48,Facility Location,uniform observed subset before weights and swaps,0.006056535391348154,,newly computed initializer/projection-only candidate
+6,1,2,23,0.4,48,MRDS,uniform observed subset before weights and swaps,0.001596679211609577,0.00010868739746979216,newly computed initializer/projection-only candidate
+6,1,2,23,0.4,48,W2-k-medoids,uniform observed subset before weights and swaps,0.00543030559684071,,newly computed initializer/projection-only candidate
+7,1,3,23,0.4,48,Facility Location,uniform observed subset before weights and swaps,0.006950077641836367,,newly computed initializer/projection-only candidate
+7,1,3,23,0.4,48,MRDS,uniform observed subset before weights and swaps,0.001331078732397171,0.0001939239099510294,newly computed initializer/projection-only candidate
+7,1,3,23,0.4,48,W2-k-medoids,uniform observed subset before weights and swaps,0.004664683587980339,,newly computed initializer/projection-only candidate
+8,2,0,37,0.4,48,Facility Location,uniform observed subset before weights and swaps,0.006580211806231678,,newly computed initializer/projection-only candidate
+8,2,0,37,0.4,48,MRDS,uniform observed subset before weights and swaps,0.0006234036105766114,0.00018305226960474224,newly computed initializer/projection-only candidate
+8,2,0,37,0.4,48,W2-k-medoids,uniform observed subset before weights and swaps,0.005728136150317397,,newly computed initializer/projection-only candidate
+9,2,1,37,0.4,48,Facility Location,uniform observed subset before weights and swaps,0.004509434207677882,,newly computed initializer/projection-only candidate
+9,2,1,37,0.4,48,MRDS,uniform observed subset before weights and swaps,0.0013763068501388863,0.0002166185886623287,newly computed initializer/projection-only candidate
+9,2,1,37,0.4,48,W2-k-medoids,uniform observed subset before weights and swaps,0.004602373916789261,,newly computed initializer/projection-only candidate
+10,2,2,37,0.4,48,Facility Location,uniform observed subset before weights and swaps,0.007588234274282561,,newly computed initializer/projection-only candidate
+10,2,2,37,0.4,48,MRDS,uniform observed subset before weights and swaps,0.0022844264856904492,0.00012029371798321358,newly computed initializer/projection-only candidate
+10,2,2,37,0.4,48,W2-k-medoids,uniform observed subset before weights and swaps,0.008076220926114484,,newly computed initializer/projection-only candidate
+11,2,3,37,0.4,48,Facility Location,uniform observed subset before weights and swaps,0.002427804173063872,,newly computed initializer/projection-only candidate
+11,2,3,37,0.4,48,MRDS,uniform observed subset before weights and swaps,0.001294541557577684,0.00010749438677216811,newly computed initializer/projection-only candidate
+11,2,3,37,0.4,48,W2-k-medoids,uniform observed subset before weights and swaps,0.002163306885325239,,newly computed initializer/projection-only candidate
+12,3,0,53,0.4,48,Facility Location,uniform observed subset before weights and swaps,0.005410900828197345,,newly computed initializer/projection-only candidate
+12,3,0,53,0.4,48,MRDS,uniform observed subset before weights and swaps,0.0011170956917963748,0.00020075616556681545,newly computed initializer/projection-only candidate
+12,3,0,53,0.4,48,W2-k-medoids,uniform observed subset before weights and swaps,0.004725152553913277,,newly computed initializer/projection-only candidate
+13,3,1,53,0.4,48,Facility Location,uniform observed subset before weights and swaps,0.005334701629750876,,newly computed initializer/projection-only candidate
+13,3,1,53,0.4,48,MRDS,uniform observed subset before weights and swaps,0.0009813396544834923,0.00010845419656364331,newly computed initializer/projection-only candidate
+13,3,1,53,0.4,48,W2-k-medoids,uniform observed subset before weights and swaps,0.004313543179315243,,newly computed initializer/projection-only candidate
+14,3,2,53,0.4,48,Facility Location,uniform observed subset before weights and swaps,0.004896382133998581,,newly computed initializer/projection-only candidate
+14,3,2,53,0.4,48,MRDS,uniform observed subset before weights and swaps,0.0016201446818476576,0.00010867841905685715,newly computed initializer/projection-only candidate
+14,3,2,53,0.4,48,W2-k-medoids,uniform observed subset before weights and swaps,0.005607272646219853,,newly computed initializer/projection-only candidate
+15,3,3,53,0.4,48,Facility Location,uniform observed subset before weights and swaps,0.0031746576220339023,,newly computed initializer/projection-only candidate
+15,3,3,53,0.4,48,MRDS,uniform observed subset before weights and swaps,0.0011481786633007547,0.0001021984145367906,newly computed initializer/projection-only candidate
+15,3,3,53,0.4,48,W2-k-medoids,uniform observed subset before weights and swaps,0.0032300779717527152,,newly computed initializer/projection-only candidate
+16,4,0,71,0.4,48,Facility Location,uniform observed subset before weights and swaps,0.005196305322973748,,newly computed initializer/projection-only candidate
+16,4,0,71,0.4,48,MRDS,uniform observed subset before weights and swaps,0.0015925880215310767,0.00011376112042499812,newly computed initializer/projection-only candidate
+16,4,0,71,0.4,48,W2-k-medoids,uniform observed subset before weights and swaps,0.0051654010055661925,,newly computed initializer/projection-only candidate
+17,4,1,71,0.4,48,Facility Location,uniform observed subset before weights and swaps,0.0030695967616800293,,newly computed initializer/projection-only candidate
+17,4,1,71,0.4,48,MRDS,uniform observed subset before weights and swaps,0.0011662500957402954,9.960051780258631e-05,newly computed initializer/projection-only candidate
+17,4,1,71,0.4,48,W2-k-medoids,uniform observed subset before weights and swaps,0.002426786924438687,,newly computed initializer/projection-only candidate
+18,4,2,71,0.4,48,Facility Location,uniform observed subset before weights and swaps,0.003026003829348123,,newly computed initializer/projection-only candidate
+18,4,2,71,0.4,48,MRDS,uniform observed subset before weights and swaps,0.0009528347364865723,0.0001036409007320276,newly computed initializer/projection-only candidate
+18,4,2,71,0.4,48,W2-k-medoids,uniform observed subset before weights and swaps,0.002799432989638638,,newly computed initializer/projection-only candidate
+19,4,3,71,0.4,48,Facility Location,uniform observed subset before weights and swaps,0.008057570222621591,,newly computed initializer/projection-only candidate
+19,4,3,71,0.4,48,MRDS,uniform observed subset before weights and swaps,0.0013128293336596181,0.0002120944340886841,newly computed initializer/projection-only candidate
+19,4,3,71,0.4,48,W2-k-medoids,uniform observed subset before weights and swaps,0.005065715383822524,,newly computed initializer/projection-only candidate
+0,0,0,11,0.5,60,Facility Location,uniform observed subset before weights and swaps,0.003173342193930464,,newly computed initializer/projection-only candidate
+0,0,0,11,0.5,60,MRDS,uniform observed subset before weights and swaps,0.0009756915246991519,0.0001944332789640425,newly computed initializer/projection-only candidate
+0,0,0,11,0.5,60,W2-k-medoids,uniform observed subset before weights and swaps,0.0034021277115851766,,newly computed initializer/projection-only candidate
+1,0,1,11,0.5,60,Facility Location,uniform observed subset before weights and swaps,0.003464409585542605,,newly computed initializer/projection-only candidate
+1,0,1,11,0.5,60,MRDS,uniform observed subset before weights and swaps,0.0008065156392981161,5.88073132594327e-05,newly computed initializer/projection-only candidate
+1,0,1,11,0.5,60,W2-k-medoids,uniform observed subset before weights and swaps,0.003106671017595549,,newly computed initializer/projection-only candidate
+2,0,2,11,0.5,60,Facility Location,uniform observed subset before weights and swaps,0.0025347591998898093,,newly computed initializer/projection-only candidate
+2,0,2,11,0.5,60,MRDS,uniform observed subset before weights and swaps,0.0007156404316805086,0.0001002042830586254,newly computed initializer/projection-only candidate
+2,0,2,11,0.5,60,W2-k-medoids,uniform observed subset before weights and swaps,0.0025803566232922605,,newly computed initializer/projection-only candidate
+3,0,3,11,0.5,60,Facility Location,uniform observed subset before weights and swaps,0.0063403474430450395,,newly computed initializer/projection-only candidate
+3,0,3,11,0.5,60,MRDS,uniform observed subset before weights and swaps,0.0005527211758578667,2.4887204597803214e-07,newly computed initializer/projection-only candidate
+3,0,3,11,0.5,60,W2-k-medoids,uniform observed subset before weights and swaps,0.005637721353337224,,newly computed initializer/projection-only candidate
+4,1,0,23,0.5,60,Facility Location,uniform observed subset before weights and swaps,0.002863439091330678,,newly computed initializer/projection-only candidate
+4,1,0,23,0.5,60,MRDS,uniform observed subset before weights and swaps,0.0007579246020738647,5.538942058254915e-05,newly computed initializer/projection-only candidate
+4,1,0,23,0.5,60,W2-k-medoids,uniform observed subset before weights and swaps,0.0015340248901687392,,newly computed initializer/projection-only candidate
+5,1,1,23,0.5,60,Facility Location,uniform observed subset before weights and swaps,0.004086259535677958,,newly computed initializer/projection-only candidate
+5,1,1,23,0.5,60,MRDS,uniform observed subset before weights and swaps,0.0006494060637283846,5.402127960947486e-05,newly computed initializer/projection-only candidate
+5,1,1,23,0.5,60,W2-k-medoids,uniform observed subset before weights and swaps,0.0032638374920495343,,newly computed initializer/projection-only candidate
+6,1,2,23,0.5,60,Facility Location,uniform observed subset before weights and swaps,0.003999417919799627,,newly computed initializer/projection-only candidate
+6,1,2,23,0.5,60,MRDS,uniform observed subset before weights and swaps,0.0009011307482114402,5.483468789296642e-05,newly computed initializer/projection-only candidate
+6,1,2,23,0.5,60,W2-k-medoids,uniform observed subset before weights and swaps,0.002666128486068204,,newly computed initializer/projection-only candidate
+7,1,3,23,0.5,60,Facility Location,uniform observed subset before weights and swaps,0.004209266500974618,,newly computed initializer/projection-only candidate
+7,1,3,23,0.5,60,MRDS,uniform observed subset before weights and swaps,0.0007792444096806933,9.847932338616742e-05,newly computed initializer/projection-only candidate
+7,1,3,23,0.5,60,W2-k-medoids,uniform observed subset before weights and swaps,0.004234754183370571,,newly computed initializer/projection-only candidate
+8,2,0,37,0.5,60,Facility Location,uniform observed subset before weights and swaps,0.004365352550788036,,newly computed initializer/projection-only candidate
+8,2,0,37,0.5,60,MRDS,uniform observed subset before weights and swaps,0.0002982468381147456,9.756268801502796e-05,newly computed initializer/projection-only candidate
+8,2,0,37,0.5,60,W2-k-medoids,uniform observed subset before weights and swaps,0.00293881830673501,,newly computed initializer/projection-only candidate
+9,2,1,37,0.5,60,Facility Location,uniform observed subset before weights and swaps,0.0033336418011049845,,newly computed initializer/projection-only candidate
+9,2,1,37,0.5,60,MRDS,uniform observed subset before weights and swaps,0.0009495290809470242,0.00010827982681462763,newly computed initializer/projection-only candidate
+9,2,1,37,0.5,60,W2-k-medoids,uniform observed subset before weights and swaps,0.0026799788558636065,,newly computed initializer/projection-only candidate
+10,2,2,37,0.5,60,Facility Location,uniform observed subset before weights and swaps,0.005220744489475014,,newly computed initializer/projection-only candidate
+10,2,2,37,0.5,60,MRDS,uniform observed subset before weights and swaps,0.0009593980589104342,6.074024612484123e-05,newly computed initializer/projection-only candidate
+10,2,2,37,0.5,60,W2-k-medoids,uniform observed subset before weights and swaps,0.004832541333164203,,newly computed initializer/projection-only candidate
+11,2,3,37,0.5,60,Facility Location,uniform observed subset before weights and swaps,0.0021394248201445725,,newly computed initializer/projection-only candidate
+11,2,3,37,0.5,60,MRDS,uniform observed subset before weights and swaps,0.0007601881834371155,5.433865425225041e-05,newly computed initializer/projection-only candidate
+11,2,3,37,0.5,60,W2-k-medoids,uniform observed subset before weights and swaps,0.0016808639391957762,,newly computed initializer/projection-only candidate
+12,3,0,53,0.5,60,Facility Location,uniform observed subset before weights and swaps,0.0030665089143434225,,newly computed initializer/projection-only candidate
+12,3,0,53,0.5,60,MRDS,uniform observed subset before weights and swaps,0.0006929828961501119,0.00010149740899143517,newly computed initializer/projection-only candidate
+12,3,0,53,0.5,60,W2-k-medoids,uniform observed subset before weights and swaps,0.002920968909188234,,newly computed initializer/projection-only candidate
+13,3,1,53,0.5,60,Facility Location,uniform observed subset before weights and swaps,0.004413570976657967,,newly computed initializer/projection-only candidate
+13,3,1,53,0.5,60,MRDS,uniform observed subset before weights and swaps,0.0005698264235744319,5.743715249074515e-05,newly computed initializer/projection-only candidate
+13,3,1,53,0.5,60,W2-k-medoids,uniform observed subset before weights and swaps,0.003959524211020015,,newly computed initializer/projection-only candidate
+14,3,2,53,0.5,60,Facility Location,uniform observed subset before weights and swaps,0.004679292377446922,,newly computed initializer/projection-only candidate
+14,3,2,53,0.5,60,MRDS,uniform observed subset before weights and swaps,0.0010042822147721096,5.462940536814881e-05,newly computed initializer/projection-only candidate
+14,3,2,53,0.5,60,W2-k-medoids,uniform observed subset before weights and swaps,0.004240748144636547,,newly computed initializer/projection-only candidate
+15,3,3,53,0.5,60,Facility Location,uniform observed subset before weights and swaps,0.003215490361111883,,newly computed initializer/projection-only candidate
+15,3,3,53,0.5,60,MRDS,uniform observed subset before weights and swaps,0.0006545464889502791,5.235164378551917e-05,newly computed initializer/projection-only candidate
+15,3,3,53,0.5,60,W2-k-medoids,uniform observed subset before weights and swaps,0.0022747417674681917,,newly computed initializer/projection-only candidate
+16,4,0,71,0.5,60,Facility Location,uniform observed subset before weights and swaps,0.005891175390024343,,newly computed initializer/projection-only candidate
+16,4,0,71,0.5,60,MRDS,uniform observed subset before weights and swaps,0.0012050027491619624,5.984255447717136e-05,newly computed initializer/projection-only candidate
+16,4,0,71,0.5,60,W2-k-medoids,uniform observed subset before weights and swaps,0.005382137527005468,,newly computed initializer/projection-only candidate
+17,4,1,71,0.5,60,Facility Location,uniform observed subset before weights and swaps,0.0027441869068238266,,newly computed initializer/projection-only candidate
+17,4,1,71,0.5,60,MRDS,uniform observed subset before weights and swaps,0.0005472228674995957,5.117861290177586e-05,newly computed initializer/projection-only candidate
+17,4,1,71,0.5,60,W2-k-medoids,uniform observed subset before weights and swaps,0.0012119954748612944,,newly computed initializer/projection-only candidate
+18,4,2,71,0.5,60,Facility Location,uniform observed subset before weights and swaps,0.002329995322031853,,newly computed initializer/projection-only candidate
+18,4,2,71,0.5,60,MRDS,uniform observed subset before weights and swaps,0.0006416867202363202,5.27104463571043e-05,newly computed initializer/projection-only candidate
+18,4,2,71,0.5,60,W2-k-medoids,uniform observed subset before weights and swaps,0.002144784219020391,,newly computed initializer/projection-only candidate
+19,4,3,71,0.5,60,Facility Location,uniform observed subset before weights and swaps,0.006050110223458145,,newly computed initializer/projection-only candidate
+19,4,3,71,0.5,60,MRDS,uniform observed subset before weights and swaps,0.0006580896847084205,0.00010679200750392542,newly computed initializer/projection-only candidate
+19,4,3,71,0.5,60,W2-k-medoids,uniform observed subset before weights and swaps,0.006090524745613146,,newly computed initializer/projection-only candidate

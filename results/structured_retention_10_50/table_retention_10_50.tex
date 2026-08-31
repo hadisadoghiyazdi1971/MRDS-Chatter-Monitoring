@@ -1,0 +1,21 @@
+\begin{table*}[t]
+\centering
+\caption{Finite meta-distributional fidelity and downstream balanced accuracy
+across the prespecified retention budgets. All selectors retain the same number
+$m$ of complete outer-training recordings at each budget.}
+\small
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}cccccccc@{}}
+\toprule
+& & \multicolumn{3}{c}{$J_\alpha(S)$} & \multicolumn{3}{c}{Balanced accuracy} \\
+\cmidrule(lr){3-5}\cmidrule(lr){6-8}
+Retention (\%) & $m$ & MRDS & W2 k-medoids & Facility Location
+& MRDS & W2 k-medoids & Facility Location \\
+\midrule
+10 & 12 & 0.011884 & 0.012824 & 0.014024 & 0.8222 & 0.7497 & 0.7330 \\
+20 & 24 & 0.003723 & 0.006992 & 0.009552 & 0.8993 & 0.9492 & 0.9369 \\
+30 & 36 & 0.002073 & 0.004870 & 0.004259 & 0.9080 & 0.9411 & 0.9375 \\
+40 & 48 & 0.001305 & 0.004422 & 0.004791 & 0.9263 & 0.9434 & 0.9368 \\
+50 & 60 & 0.000754 & 0.003339 & 0.003906 & 0.9348 & 0.9393 & 0.9372 \\
+\bottomrule
+\end{tabular*}
+\end{table*}
