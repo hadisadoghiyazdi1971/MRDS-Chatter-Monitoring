@@ -18,8 +18,6 @@
     "W2-k-medoids initializer",
     "Facility Location initializer"
   ],
-  "mixture_weight_optimization": false,
-  "one_swap_refinement": false,
   "outer_training_recordings_per_fold": 120,
   "seeds": [11, 23, 37, 53, 71],
   "synthetic_stopping": {

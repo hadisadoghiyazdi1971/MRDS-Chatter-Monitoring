@@ -1,18 +1,9 @@
-# Local data and rerun products are intentionally not versioned.
-chatterData/
-raw_data/
-results/**/checkpoints/
-results/**/traces/
-*.npz
-*.pyc
 __pycache__/
-
-# LaTeX build products
-*.aux
-*.bbl
-*.blg
-*.fdb_latexmk
-*.fls
+*.py[cod]
+.venv/
+venv/
+.idea/
+.vscode/
+outputs/
+*.tmp
 *.log
-*.out
-*.synctex.gz

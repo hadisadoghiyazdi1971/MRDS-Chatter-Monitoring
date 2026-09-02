@@ -1,32 +1,11 @@
 clc; clear all; close all;
 
 %% =======================================================================
-%  Feature Extraction Script — v6
-%  - 24 test conditions × repetitions (from the new layout)
-%  - 2-class labels: Stable(1), Chatter(0) — Transition class removed
-%  - Fixed 350 windows per signal (Short signals extracted as available)
-%  - Raw signal (no noise removal)
-%  - v4: added wRCMDE (Yang, Guo & Sun, 2022) and MPE (Liu et al., 2021)
-%        features 38-42. All original v3 code/logic is unchanged below;
-%        new code is clearly marked and appended only.
-%  - v5: added CE (Liu et al., 2021, Eq. 9) and three additional MPE
-%        scale factors (s = 1, 2, 3), features 43-46. All v3/v4
-%        code/logic is unchanged below; new code is clearly marked and
-%        appended only.
-%  - v6: SUPERSEDES the multi-scale part of v4/v5. Per paper, wRCMDE is
-%        the only one of the two that is genuinely a multi-scale feature
-%        set in its source paper (Yang et al. use s = 1..4 jointly as 4
-%        inputs to their SVM); MPE in Liu et al. is a single best-scale
-%        index (s = 4) chosen from a sweep, not a multi-scale vector. To
-%        match the 40-feature table (22 time + 14 freq + CE + WPEE + one
-%        MPE + one wRCMDE = 40), both are now reduced to ONE feature
-%        each: MPE_s1/s2/s3 (added in v5) are removed, keeping only the
-%        paper-justified MPE at s = 4; wRCMDE_s1/s2/s3/s4 (added in v4)
-%        are collapsed to a single chosen scale (see parameter block
-%        below for which one and why this is a judgment call, not a
-%        literal reproduction of Yang et al.). CE is unchanged. Total
-%        feature count: 40.
-%  - Output: one .mat file per signal (same name, containing SigData struct)
+%  Extraction of the 40 window-level descriptors used in the study.
+%  - Binary labels: Stable (1) and Chatter (0)
+%  - Up to 350 windows per recording
+%  - Raw acoustic signal without a denoising stage
+%  - Output: one MAT file per recording containing a SigData structure
 %% =======================================================================
 
 % -----------------------------------------------------------------------
@@ -289,8 +268,7 @@ DeltaT           = 20e-3;
 OverlapRatio     = 0.5;
 TARGET_WINDOWS   = 350;
 %% =======================================================================
-%  [v6 — supersedes v4/v5 multi-scale parameter block] Entropy/Envelope
-%  Feature Parameters
+%  Entropy and envelope-feature parameters
 %  Three feature families are added below, computed per the cited
 %  papers' equations and reported parameter choices. These are ADDED
 %  features only — none of the 37 features above were modified.
@@ -643,7 +621,7 @@ for file_idx = 1:num_files
             SigData(co).WPEE = NaN;
         end
 
-          %% ========== [v6 — supersedes v4/v5 block] Features 38-40 ==========
+          %% ====================== Features 38-40 ======================
         %  Single-scale wRCMDE, single-scale MPE, and CE. See the
         %  parameter block earlier in this script for why wRCMDE is a
         %  single chosen scale here (our choice, flagged) while MPE's
@@ -694,7 +672,7 @@ fprintf('\nAll files processed.\n');
 
 
 %% =======================================================================
-%  [NEW in v4] Local Functions — Entropy Feature Implementations
+%  Local functions for entropy-feature calculation
 %  Defined after script code (valid in MATLAB R2016b+ script files).
 %  Each function implements the cited paper's equations exactly.
 %% =======================================================================
@@ -822,7 +800,7 @@ function out = localMPE(x, m, tau, s)
 end
 
 function out = localEnvelopeSpectrumCE(x)
-% [NEW in v5] Crest factor of the envelope spectrum (CE).
+% Crest factor of the envelope spectrum (CE).
 % Liu, Wang, Li, Yue, Liang & Wang (2021), Int J Adv Manuf Technol,
 % Eqs. (6)-(9):
 %   xh(t)  = Hilbert transform of x(t)                       Eq. (6)

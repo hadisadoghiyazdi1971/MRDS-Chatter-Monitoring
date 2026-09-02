@@ -1,17 +1,13 @@
 cff-version: 1.2.0
-message: "If you use this repository, please cite the associated article and archived release."
-title: "MRDS: Meta-Rényi Distributional Sampling for Recording-Level Chatter Monitoring"
+message: "Please cite the associated study when using this software or data."
+title: "MRDS for recording-level milling-chatter data reduction"
 type: software
 authors:
-  - family-names: "[Hosam Shadoud]"
-  
-version: "1.0.0"
-date-released: "2026-08-22"
-url: "[GITHUB_REPOSITORY_URL]"
-# doi: "[ZENODO_DOI]"
-# preferred-citation:
-#   type: article
-#   title: "[ARTICLE TITLE]"
-#   journal: "[JOURNAL]"
-#   year: 2026
-#   doi: "[ARTICLE DOI]"
+  - family-names: Shadoud
+    given-names: Hosam
+  - family-names: Sadoghi-Yazdi
+    given-names: Hadi
+  - family-names: Moetakef-Imani
+    given-names: Behnam
+version: 1.0.0
+date-released: 2026-09-02

@@ -1,5 +1,5 @@
 ﻿{
-    "policy":  "final_random_uniform_subset_predefined_seedset_v2",
+    "policy":  "random_uniform_subset_10pct",
     "retention":  0.1,
     "subset_size":  12,
     "n_outer_splits":  20,
@@ -195,6 +195,6 @@
                                   "split":  19
                               }
                           ],
-    "source_policy":  "final_random_uniform_subset_predefined_seedset_v2",
+    "source_policy":  "random_uniform_subset_10pct",
     "scope":  "Primary 10% Random baseline only; no 20--50% Random results are included."
 }

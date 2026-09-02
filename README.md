@@ -1,67 +1,63 @@
-# MRDS: recording-level reduction for milling-chatter monitoring
+# MRDS for recording-level milling-chatter data reduction
 
-This repository snapshot accompanies the final manuscript, **“Meta-Rényi
-Distributional Sampling for Recording-Level Data Reduction in Milling Chatter
-Detection.”** Open [manuscript/Manuscript (1).pdf](manuscript/Manuscript%20(1).pdf)
-first.
+This repository contains the implementation, processed feature matrices, fixed
+condition-disjoint splits, and numerical results for Meta-Rényi Distributional
+Sampling (MRDS).
 
-## Final method represented here
+Each acoustic recording is represented by an empirical distribution of 40
+window-level descriptors. The reduction stage compresses every training
+recording to eight support atoms, constructs exact Wasserstein-2 distances, and
+updates synthetic distribution-valued prototypes under a finite Rényi
+objective with `alpha = 2`. A minimum-cost one-to-one Wasserstein assignment
+maps the prototypes to distinct observed recordings. The selected recordings
+have equal subset mass and are passed to an unweighted GaussianNB classifier
+through a separate 200-dimensional recording representation.
 
-The final MRDS pipeline is projection-only after synthetic optimization:
+## Repository contents
 
-1. represent each complete acoustic recording as a compressed empirical
-   distribution of window-level descriptors;
-2. optimize synthetic distribution-valued prototypes under the finite
-   Meta-Rényi objective using Wasserstein geometry;
-3. recover distinct complete observed recordings through a minimum-cost
-   one-to-one Wasserstein assignment; and
-4. use the resulting equal-mass subset for standard, unweighted GaussianNB
-   evaluation.
-
-Post-projection mixture-weight optimization and one-swap subset refinement
-are **not** part of the final reported MRDS method.
-
-## What is included
-
-- `manuscript/`: the final 34-page manuscript PDF and a self-contained LaTeX
-  source bundle.
-- `code/`: the frozen projection-only evaluation runner, its required support
-  modules, dependency list, and the MATLAB feature-extraction source.
-- `results/primary_10pct/`: Table 4 values and fold-wise primary-budget
-  results. The Random baseline is provided **only** for this 10% comparison.
+- `code/`: MRDS, the structured comparison methods, the evaluation runner, and
+  the MATLAB feature-extraction source.
+- `data/processed_feature_matrices/`: the 160 processed MAT files used as
+  direct computational inputs.
+- `reproducibility/`: recording metadata, descriptor names, fixed folds, and
+  the numerical configuration.
+- `results/primary_10pct/`: the primary 10% comparison, including Random.
 - `results/structured_retention_10_50/`: MRDS, Wasserstein k-medoids, and
-  Facility Location results supporting the retention curve reported in the
-  manuscript. It contains no Random-baseline rows.
-- `reproducibility/`: frozen condition-disjoint split metadata and feature
-  field definitions.
+  Facility Location across 10%, 20%, 30%, 40%, and 50% retention.
+- `docs/`: data provenance, reproduction instructions, and validation notes.
+- `FILE_MAP.md`: a file-by-file guide.
+- `PACKAGE_MANIFEST.csv` and `SHA256SUMS.txt`: file sizes and SHA-256 digests.
 
-## Deliberate scope exclusions
+The manuscript and its LaTeX sources are not distributed in this repository.
 
-No Random-baseline results for 20%, 30%, 40%, or 50% retention are included.
-No exploratory, sensitivity, stopping-policy, legacy refinement, cache, raw
-audio, or MAT-archive output is included. Raw acquisition data are not
-redistributed in this repository.
+## Installation
 
-The code is supplied as a frozen audit/reproducibility snapshot. A complete
-rerun requires the original raw archive and local data-access authorization;
-those data are intentionally absent. The final execution path in
-`run_simplified_retention_curve.py` invokes
-`synthetic_projection_only` and duplicate-free projection, not the legacy
-post-projection refinement routines retained in a support module for exact
-snapshot compatibility.
+Python 3.11 or a compatible later version is recommended.
 
-## Manuscript build
-
-From `manuscript/source/`:
-
-```powershell
-latexmk -pdf MRDS_Meccanica.tex
+```bash
+python -m venv .venv
+python -m pip install -r requirements.txt
 ```
 
-The shipped `manuscript/Manuscript (1).pdf` is the canonical review copy.
+## Reproduction command
 
-## License
+The full computation is expensive because it repeatedly solves exact optimal
+transport problems.
 
-No open-source license has been selected for this snapshot. Do not assume
-permission to reuse the code, figures, manuscript, or data-related metadata
-until the authors choose and add a license.
+```bash
+python code/run_mrds_evaluation.py
+```
+
+Use `--splits` to run selected outer folds and `--output` to choose a result
+directory. See `docs/REPRODUCIBILITY.md` for the complete configuration.
+
+## Data scope
+
+The MAT files contain processed window-descriptor matrices. The original WAV
+recordings are not included. See `data/README_DATA.md` and
+`docs/DATA_AND_PROVENANCE.md`.
+
+## Use and citation
+
+The authors retain copyright in this review release. See `USAGE_NOTICE.md` and
+`CITATION.cff`.

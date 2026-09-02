@@ -1,0 +1,33 @@
+{
+  "method": "MRDS",
+  "alpha": 2.0,
+  "support_atoms_per_recording": 8,
+  "window_descriptor_dimensions": 40,
+  "classifier_representation_dimensions": 200,
+  "retention_budgets": {
+    "0.10": 12,
+    "0.20": 24,
+    "0.30": 36,
+    "0.40": 48,
+    "0.50": 60
+  },
+  "outer_folds": 20,
+  "outer_fold_seeds": [11, 23, 37, 53, 71],
+  "random_seed_by_repeat": {
+    "0": 101,
+    "1": 211,
+    "2": 307,
+    "3": 401,
+    "4": 503
+  },
+  "transport": "exact EMD",
+  "kernel_bandwidth": "median positive pairwise training W2 distance",
+  "synthetic_update_schedule": "Gauss-Seidel",
+  "synthetic_relative_improvement_threshold": 0.001,
+  "synthetic_required_consecutive_sweeps": 3,
+  "synthetic_safety_cap": 30,
+  "projection": "minimum-cost one-to-one Wasserstein assignment",
+  "observed_subset_mass": "uniform",
+  "classifier": "unweighted GaussianNB",
+  "random_scope": "10% retention only"
+}
